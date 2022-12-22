@@ -27,11 +27,11 @@
                   </li>
                   {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href={% url 'exit' %}>Cerrar sesión</a>
+                      <a class="nav-link" href={% url 'login' %}>Ingresar</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href={% url 'index' %}>Ver portafolio</a>
+                      <a class="nav-link" href={% url 'register' %}>Crear cuenta</a>
                     </li>
 
 
@@ -42,7 +42,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href={% url 'register' %}>Registrarse</a>
+                        <a class="nav-link" href={% url 'register' %}>Crear cuenta</a>
                     </li>
 
                   {% endif %}
