@@ -10,7 +10,7 @@ class IPIsValid:
 
     def __call__(self, request):
         ip, is_routable = get_client_ip(request)
-        #IPdata(ip=ip).save()
+        IPdata(ip=ip).save()
 
 
         response = self.get_response(request)
